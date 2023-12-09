@@ -1,0 +1,31 @@
+import = ["~/.config/alacritty/rose-pine.toml"]
+
+[env]
+  TERM = "xterm-256color"
+
+[window]
+  decorations = "None"
+  dimensions = { columns = 145, lines = 45 }
+  padding = { x = 10, y = 10  }
+  dynamic_padding = true
+
+[font]
+  size = 10
+
+  normal.family = "SourceCodePro"
+  normal.style = "Regular"
+  bold.family = "SourceCodePro"
+  bold.style = "Bold"
+  italic.family = "SourceCodePro"
+  italic.style = "Italic"
+
+[cursor]
+  style.shape = "Beam"
+  thickness = 0.18
+  vi_mode_style = "Block"
+
+[mouse]
+  hide_when_typing = true
+
+[selection]
+  save_to_clipboard = true
