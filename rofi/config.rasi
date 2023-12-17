@@ -11,12 +11,15 @@
 	pur: #c4a7e7;
 	red: #eb6f92;
 	yel: #f6c177;
+  hlw: #21202e;
+  hmd: #403d52;
+  hhg: #524f67;
 
 	font: "SourceCodePro Regular 10";
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @grn;
+	active-background: @hlw;
 	urgent-background: @red;
 
 	selected-background: @active-background;
@@ -31,6 +34,8 @@
 	border:           1;
 	border-color:     @bordercolor;
 	padding:          5;
+  border-radius:    10;
+  transparency:     "real";
 }
 #mainbox {
 	border:  0;
@@ -39,7 +44,7 @@
 #message {
 	border:       1px solid 0px 0px ;
 	border-color: @separatorcolor;
-	padding:      1px ;
+	padding:      5px ;
 }
 #textbox {
 	text-color: @foreground;
@@ -54,7 +59,8 @@
 }
 #element {
 	border:  0;
-	padding: 5px ;
+	padding: 10px ;
+  border-radius: 5;
 }
 #element.normal.normal {
 	background-color: @background;
@@ -109,7 +115,7 @@
 #inputbar {
 	spacing:    0;
 	text-color: @foreground;
-	padding:    1px ;
+	padding:    10px ;
 }
 #case-indicator {
 	spacing:    0;
@@ -117,18 +123,19 @@
 }
 #entry {
 	spacing:    0;
-	text-color: @cya;
+	text-color: @foreground;
 }
 #prompt {
 	spacing:    0;
-	text-color: @grn;
+	text-color: @hhg;
+  margin:     0 0.3em 0 0 ;
 }
 #inputbar {
-	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+	children:   [ prompt,entry,case-indicator ];
 }
 #textbox-prompt-colon {
 	expand:     false;
-	str:        " > ";
+	str:        "";
 	margin:     0px 0.3em 0em 0em;
 	text-color: @grn;
 }
