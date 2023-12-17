@@ -3,6 +3,7 @@
 !/alacritty
 !/tmux
 !/nvim
+nvim/plugin
 !/polybar
 !/i3
 !/zathura
